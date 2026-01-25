@@ -117,4 +117,5 @@ HAVING SUM(Population) > 200000000
 ORDER BY AvgLifeExp DESC
 LIMIT 3;
 
-select Name, Population FROM country;
+
+select*FROM country;
