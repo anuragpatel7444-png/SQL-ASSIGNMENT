@@ -118,4 +118,4 @@ ORDER BY AvgLifeExp DESC
 LIMIT 3;
 
 
-select*FROM country;
+select Name, Population FROM country;
