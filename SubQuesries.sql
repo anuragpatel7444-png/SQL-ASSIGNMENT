@@ -1,4 +1,4 @@
--- Part 1: Database Setup Script
+-- Part 1: Database Setup
 
 DROP DATABASE IF EXISTS SubQueries_assignment;
 CREATE DATABASE SubQueries_assignment;
@@ -175,4 +175,5 @@ WHERE s.sale_amount = (
 -- 5. Retrieve the names of employees whose salary is greater than the highest sale amount recorded.
 SELECT name 
 FROM Employees 
+
 WHERE salary > (SELECT MAX(sale_amount) FROM Sales);
